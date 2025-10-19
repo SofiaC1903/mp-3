@@ -2,8 +2,8 @@
 export default function Home(){
     return (
         <main>
-            <title>Home | Resume</title>
-            <img id="headshot" src="src/headshot-sf.jpeg" alt="Sofia Ford"/>
+            <title>Sofia F Resume | Home </title>
+            <img id="headshot" src="../images/headshot-sf.jpg" alt="Sofia Ford"/>
             <div id="intro">
                 <p><br/>My name is Sofia Ford, and I'm an undergraduate student at Boston University. <br/>
                     I'm majoring in Computer Science with the expected graduation date of May 2026. I'm looking to <br/>
@@ -19,5 +19,5 @@ export default function Home(){
             <h3 className="contact">Contact Info</h3>
             <p className="contact">sofiac1903@gmail.com | scfordw@bu.edu</p>
         </main>
-)
+    )
 }

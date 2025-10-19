@@ -2,7 +2,7 @@
 export default function Employment(){
     return (
         <main>
-            <title>Employment | Resume</title>
+            <title> Sofia F Resume | Employment </title>
             <h3 className="work">Work Experience</h3>
 
             <div className="work">

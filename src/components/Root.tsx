@@ -5,6 +5,11 @@ import {Route, Routes} from "react-router";
 import Home from "./mains/Home.tsx";
 import Education from "./mains/Education.tsx";
 import Employment from "./mains/Employment.tsx";
+import Leadership from "./mains/Leadership.tsx";
+import Certifications from "./mains/Certifications.tsx";
+import References from "./mains/References.tsx";
+import Projects from "./mains/Projects.tsx";
+
 
 export default function Root(){
     return (
@@ -16,10 +21,10 @@ export default function Root(){
                     <Route path={`/`} element={<Home/>}/>
                     <Route path={`/education`} element={<Education/>}/>
                     <Route path={`/employment`} element={<Employment/>}/>
-                    <Route path={`/leadership`} element={<Education/>}/>
-                    <Route path={`/certifications`} element={<Education/>}/>
-                    <Route path={`/references`} element={<Education/>}/>
-                    <Route path={`/projects`} element={<Education/>}/>
+                    <Route path={`/leadership`} element={<Leadership/>}/>
+                    <Route path={`/certifications`} element={<Certifications/>}/>
+                    <Route path={`/references`} element={<References/>}/>
+                    <Route path={`/projects`} element={<Projects/>}/>
                 </Routes>
             </div>
             <Footer/>

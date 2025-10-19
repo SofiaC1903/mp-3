@@ -2,7 +2,7 @@
 export default function Education(){
     return (
         <main>
-            <title>Education | Resume</title>
+            <title>Sofia F Resume | Education </title>
             <h3 className="schools">Educational Background</h3>
             <br/>
             <p className="schools">
