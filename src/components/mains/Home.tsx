@@ -1,10 +1,15 @@
+import styled from "styled-components";
 
+const StyledHome = styled.main`
+    width: 70%;
+    height: 100vh;
+`
 export default function Home(){
     return (
-        <main>
+        <StyledHome>
             <title>Sofia F Resume | Home </title>
-            <img id="headshot" src="../images/headshot-sf.jpg" alt="Sofia Ford"/>
-            <div id="intro">
+            <img src="../images/headshot-sf.jpg" alt="Sofia Ford"/>
+            <div>
                 <p><br/>My name is Sofia Ford, and I'm an undergraduate student at Boston University. <br/>
                     I'm majoring in Computer Science with the expected graduation date of May 2026. I'm looking to <br/>
                     expand my knowledge in CS through an entry-level position or internship.<br/>
@@ -16,8 +21,8 @@ export default function Home(){
                     free to explore my website.
                 </p>
             </div>
-            <h3 className="contact">Contact Info</h3>
-            <p className="contact">sofiac1903@gmail.com | scfordw@bu.edu</p>
-        </main>
+            <h3>Contact Info</h3>
+            <p>sofiac1903@gmail.com | scfordw@bu.edu</p>
+        </StyledHome>
     )
 }

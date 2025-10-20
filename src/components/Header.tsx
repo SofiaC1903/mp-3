@@ -2,9 +2,10 @@
 export default function Header(){
 
     return (
-        <head>
-            <meta charSet="UTF-8"/>
+        <header>
             <title>Sofia F Resume | Home</title>
-        </head>
+            <h1>Sofia Ford's Resume</h1>
+            <p>An online resume showing my professional progress.</p>
+        </header>
     )
 }

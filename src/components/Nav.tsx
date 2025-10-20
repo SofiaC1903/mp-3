@@ -1,9 +1,28 @@
 import {Link} from "react-router";
+import styled from "styled-components";
+
+const StyledNav = styled.nav`
+    width: 30%;
+    
+    @media screen and (max-width: 1000px){
+        width: 100%;
+    }
+`
+const StyledUl = styled.ul`
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+    @media screen and (max-width: 1000px){
+        flex-direction: row;
+    }
+`
 
 export default function Nav() {
     return (
-        <nav>
-            <ul>
+        <StyledNav>
+            <StyledUl>
                 <li><Link to={`/`}>Home</Link></li>
                 <li><Link to={`/education`}>Education</Link></li>
                 <li><Link to={`/employment`}>Work Experiences</Link></li>
@@ -11,7 +30,7 @@ export default function Nav() {
                 <li><Link to={`/certifications`}>Certifications</Link></li>
                 <li><Link to={`/references`}>References</Link></li>
                 <li><Link to={`/projects`}>Projects</Link></li>
-            </ul>
-        </nav>
+            </StyledUl>
+        </StyledNav>
     )
 }

@@ -9,13 +9,28 @@ import Leadership from "./mains/Leadership.tsx";
 import Certifications from "./mains/Certifications.tsx";
 import References from "./mains/References.tsx";
 import Projects from "./mains/Projects.tsx";
+import styled from "styled-components";
 
+const Wrapper = styled.div`
+    width: 80vw;
+    margin: 0 auto;
+`
+
+const Container = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    @media screen and (max-width: 1000px){
+        flex-direction: column;
+    }
+`
 
 export default function Root(){
     return (
-        <>
+        <Wrapper>
             <Header/>
-            <div>
+            <Container>
                 <Nav/>
                 <Routes>
                     <Route path={`/`} element={<Home/>}/>
@@ -26,8 +41,8 @@ export default function Root(){
                     <Route path={`/references`} element={<References/>}/>
                     <Route path={`/projects`} element={<Projects/>}/>
                 </Routes>
-            </div>
+            </Container>
             <Footer/>
-        </>
+        </Wrapper>
     )
 }
