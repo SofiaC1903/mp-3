@@ -1,13 +1,30 @@
 import {StyledMain} from "../Root.tsx";
+import styled from "styled-components";
+
+const StyledTitle = styled.h3`
+    padding: 4% 0 0 4%;
+`
+
+const StyledWork = styled.div`
+    padding: 4% 2%;
+`
+const StyledList = styled.ul`
+    margin-bottom: 2%;
+    list-style: none;
+    
+    li p{
+        padding: 2% 2% 2% 5%;
+    }
+`
 
 export default function Employment(){
     return (
         <StyledMain>
             <title>Sofia F Resume | Employment </title>
-            <h3 className="work">Work Experience</h3>
 
-            <div className="work">
-                <ul>
+            <StyledTitle>Work Experience</StyledTitle>
+            <StyledWork>
+                <StyledList>
                     <li>
                         <strong>Panama's Ministry of Economy and Finance</strong><br/>
                         <p><em>Intern in the Computation Department</em><br/>
@@ -26,8 +43,8 @@ export default function Employment(){
                             Jun 2024-Aug 2024<br/>
                             Panama City, Panama</p>
                     </li>
-                </ul>
-            </div>
+                </StyledList>
+            </StyledWork>
         </StyledMain>
     )
 }
