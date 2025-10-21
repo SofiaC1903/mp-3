@@ -1,13 +1,9 @@
-import {StyledMain} from "../Root.tsx";
+import {StyledMain, StyledTitle} from "../Root.tsx";
 import styled from "styled-components";
 
-const StyledTitle = styled.h3`
-    padding: 3% 0 0 3%;
-`
 
 const StyledLeadership = styled.div`
     padding: 2% 4%;
-
    
 `
 const StyledList = styled.ul`
@@ -21,7 +17,6 @@ const StyledList = styled.ul`
 `
 
 const StyledText = styled.p`
-    margin: 2%;
     padding: 0 3%;
 `
 

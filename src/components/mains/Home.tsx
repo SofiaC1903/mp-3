@@ -14,7 +14,7 @@ const StyledContact = styled.div`
     padding-left: 4%;
     
     p{
-        padding-left: 2%;
+        padding: 2% 0 0 2%;
     }
 `
 

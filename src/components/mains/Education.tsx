@@ -1,11 +1,5 @@
-import {StyledMain} from "../Root.tsx";
+import {StyledMain, StyledTitle} from "../Root.tsx";
 import styled from "styled-components";
-
-
-
-const StyledTitle = styled.h3`
-    padding: 4% 0 0 4%;
-`
 
 const StyledSubtitle = styled.h4`
     padding-left: 4%;

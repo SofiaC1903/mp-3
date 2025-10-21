@@ -16,7 +16,7 @@ const Wrapper = styled.div`
     margin: 0 auto;
     text-align: left;
     background-color: #ffefd3;
-    font-size: calc(5px + 1vw);
+    font-size: calc(3px + 1vw);
 `
 
 const Container = styled.div`
@@ -31,13 +31,18 @@ const Container = styled.div`
         overflow:scroll;
         flex-direction: column;
         align-items: center;
+        height: 100vh;
     }
 `
 
 export const StyledMain = styled.main`
     height: 100vh;
     width: 70%;
-    font-size: calc(5px + 1vw);
+
+    @media screen and (max-width:1000px){
+        height:100vh;
+        width: 100%;
+    }
 `
 
 export const StyledHeader = styled.header`
@@ -45,6 +50,10 @@ export const StyledHeader = styled.header`
     color: white;
     padding: 2%;
     text-shadow: -1px -1px 7px #f68d08;
+
+    @media screen and (max-width:1000px){
+        text-align: center;
+    }
 `
 
 export const StyledImage = styled.img`
@@ -52,6 +61,10 @@ export const StyledImage = styled.img`
     max-width: 45%;
     padding: 5% 5%;
     filter: drop-shadow(-1px -1px 7px #f68d08);
+`
+
+export const StyledTitle = styled.h3`
+    padding: 4% 0 0 4%;
 `
 
 export default function Root(){
