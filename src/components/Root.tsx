@@ -46,6 +46,13 @@ export const StyledHeader = styled.header`
     text-shadow: -1px -1px 7px #f68d08;
 `
 
+export const StyledImage = styled.img`
+    display: inline;
+    max-width: 45%;
+    padding: 5% 5%;
+    filter: drop-shadow(-1px -1px 7px #f68d08);
+`
+
 export default function Root(){
     return (
         <Wrapper>

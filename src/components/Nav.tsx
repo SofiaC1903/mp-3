@@ -19,7 +19,7 @@ const StyledUl = styled.ul`
     li{
         
         width: 100%;
-        padding: 3% 3%;
+        padding: 5% 5%;
         
         &:hover{
             background-color: #395c6b;
