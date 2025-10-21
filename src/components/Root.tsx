@@ -23,9 +23,10 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 80%;
     border-top: 4px solid #395c6b;
     border-bottom: 4px solid #395c6b;
+    overflow: scroll;
     
     @media screen and (max-width: 1000px){
         overflow:scroll;
