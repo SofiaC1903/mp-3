@@ -28,6 +28,7 @@ const Container = styled.div`
     border-bottom: 4px solid #395c6b;
     
     @media screen and (max-width: 1000px){
+        overflow:scroll;
         flex-direction: column;
         align-items: center;
     }

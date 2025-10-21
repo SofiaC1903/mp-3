@@ -7,6 +7,7 @@ const StyledNav = styled.nav`
     
     @media screen and (max-width: 1000px){
         width: 100%;
+        border-bottom: 4px solid #395c6b;
     }
 `
 const StyledUl = styled.ul`
@@ -34,6 +35,7 @@ const StyledUl = styled.ul`
 
 const StyledLink = styled(Link)`
     text-decoration: none;
+    font-size: calc(2px + 2vw);
     color: white;
 
 `
