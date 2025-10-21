@@ -1,11 +1,4 @@
-import styled from "styled-components";
-
-const StyledHeader = styled.header`
-    background-color: #fdbe7b;
-    color: white;
-    padding: 2%;
-    text-shadow: -1px -1px 7px #f68d08;
-`
+import {StyledHeader} from "./Root.tsx";
 
 export default function Header(){
 

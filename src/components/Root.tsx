@@ -39,6 +39,13 @@ export const StyledMain = styled.main`
     font-size: calc(5px + 1vw);
 `
 
+export const StyledHeader = styled.header`
+    background-color: #fdbe7b;
+    color: white;
+    padding: 2%;
+    text-shadow: -1px -1px 7px #f68d08;
+`
+
 export default function Root(){
     return (
         <Wrapper>
