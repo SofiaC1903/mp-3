@@ -11,7 +11,7 @@ export default function Projects(){
 
             <StyledTitle>Projects:</StyledTitle>
             <br/>
-            <Calculator></Calculator>
+            <Calculator/>
 
         </StyledMain>
     )
