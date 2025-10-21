@@ -1,7 +1,8 @@
+import {StyledMain} from "../Root.tsx";
 
 export default function Education(){
     return (
-        <main>
+        <StyledMain>
             <title>Sofia F Resume | Education </title>
             <h3 className="schools">Educational Background</h3>
             <br/>
@@ -30,6 +31,6 @@ export default function Education(){
                 <br/>
                 <strong>Coursework In Progress:</strong> Web Development, Distributed Systems
             </p>
-        </main>
+        </StyledMain>
     )
 }

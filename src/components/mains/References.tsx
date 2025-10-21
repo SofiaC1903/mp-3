@@ -1,7 +1,8 @@
+import {StyledMain} from "../Root.tsx";
 
 export default function References(){
     return (
-        <main>
+        <StyledMain>
             <title> Sofia F Resume | References </title>
             <h3 className="references">References:</h3>
             <ul className="references">
@@ -16,6 +17,6 @@ export default function References(){
                         <strong>Phone:</strong>+507-6672-2074</p>
                 </li>
             </ul>
-        </main>
+        </StyledMain>
     )
 }

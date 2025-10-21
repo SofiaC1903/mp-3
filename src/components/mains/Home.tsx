@@ -1,14 +1,10 @@
-import styled from "styled-components";
+import {StyledMain} from "../Root.tsx";
 
-const StyledHome = styled.main`
-    width: 70%;
-    height: 100vh;
-`
 export default function Home(){
     return (
-        <StyledHome>
+        <StyledMain>
             <title>Sofia F Resume | Home </title>
-            <img src="../images/headshot-sf.jpg" alt="Sofia Ford"/>
+            <img src="../../images/headshot-sf.jpg" alt="Sofia Ford"/>
             <div>
                 <p><br/>My name is Sofia Ford, and I'm an undergraduate student at Boston University. <br/>
                     I'm majoring in Computer Science with the expected graduation date of May 2026. I'm looking to <br/>
@@ -23,6 +19,6 @@ export default function Home(){
             </div>
             <h3>Contact Info</h3>
             <p>sofiac1903@gmail.com | scfordw@bu.edu</p>
-        </StyledHome>
+        </StyledMain>
     )
 }

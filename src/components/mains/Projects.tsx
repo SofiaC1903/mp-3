@@ -1,7 +1,8 @@
+import {StyledMain} from "../Root.tsx";
 
 export default function Projects(){
     return (
-        <main>
+        <StyledMain>
             <title> Sofia F Resume | Projects </title>
             <h3 className="projects">Projects:</h3>
 
@@ -23,6 +24,6 @@ export default function Projects(){
                     <h2 id="output"></h2>
                 </div>
             </div>
-        </main>
+        </StyledMain>
     )
 }

@@ -1,7 +1,9 @@
+import {StyledMain} from "../Root.tsx";
+
 
 export default function Leadership(){
     return (
-        <main>
+        <StyledMain>
             <title>Sofia F Resume | Leadership </title>
             <h3 className="leadership">Leadership Experience</h3>
 
@@ -37,6 +39,6 @@ export default function Leadership(){
                     </li>
                 </ul>
             </div>
-        </main>
+        </StyledMain>
     )
 }
