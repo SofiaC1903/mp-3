@@ -1,11 +1,24 @@
-import {StyledMain} from "../Root.tsx";
+import {StyledMain, StyledTitle} from "../Root.tsx";
+import styled from 'styled-components';
+
+
+const StyledList = styled.ul`
+    list-style:none;
+    padding-top: 2%;
+    padding-left: 4%;
+    
+    p{
+        margin:2%;
+    }
+`
 
 export default function References(){
     return (
         <StyledMain>
             <title> Sofia F Resume | References </title>
-            <h3 className="references">References:</h3>
-            <ul className="references">
+
+            <StyledTitle>References:</StyledTitle>
+            <StyledList>
                 <li><strong>Patricia Norton | Boston University Dining Service</strong><br/>
                     <p><em>Food Service Manager, Questrom School of Business Retail</em><br/>
                         <strong>Office:</strong>595 Commonwealth Avenue Boston, MA 02215<br/>
@@ -16,7 +29,7 @@ export default function References(){
                         <strong>Office:</strong>XC5V+QXP, Panama City, Panamá Province, Panama<br/>
                         <strong>Phone:</strong>+507-6672-2074</p>
                 </li>
-            </ul>
+            </StyledList>
         </StyledMain>
     )
 }
