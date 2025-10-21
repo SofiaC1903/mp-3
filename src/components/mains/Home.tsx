@@ -35,8 +35,8 @@ export default function Home(){
                 </p>
             </StyledIntro>
             <StyledContact>
-            <h3>Contact Info</h3>
-            <p>sofiac1903@gmail.com | scfordw@bu.edu</p>
+                <h3>Contact Info</h3>
+                <p>sofiac1903@gmail.com | scfordw@bu.edu</p>
             </StyledContact>
         </StyledMain>
     )
