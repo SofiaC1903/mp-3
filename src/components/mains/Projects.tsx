@@ -1,5 +1,6 @@
 import {StyledMain, StyledTitle} from "../Root.tsx";
 import styled from "styled-components";
+import {useEffect, useState} from "react";
 
 const StyledCalc = styled.div`
     display: flex;
@@ -91,6 +92,44 @@ const Result = styled.div`
 `
 
 export default function Projects(){
+    const [one, setOne] = useState('');
+    const [two, setTwo] = useState('');
+    const [operator, setOperator] = useState('');
+    const [output, setOutput] = useState<string>();
+    const [negative, setNegative] = useState(false);
+
+    useEffect(()=>{
+        const num1 = Number(one);
+        const num2 = Number(two);
+
+        if(operator === '+'){
+            const answer = num1 + num2;
+            setOutput(String(answer));
+        }else if(operator === '-'){
+            const answer = num1  - num2;
+            setOutput(String(answer));
+        }else if(operator === '*'){
+            const answer = num1  * num2;
+            setOutput(String(answer));
+        }else if(operator==='/'){
+            const answer = num1 / num2;
+            setOutput(String(answer));
+        }else if(operator === '**'){
+            const answer = num1  ** num2;
+            setOutput(String(answer));
+        }else if(operator == 'Clear'){
+            setOutput('');
+        }
+    }, [operator, one, two]);
+
+    useEffect(() => {
+        if(Number(output) < 0){
+            setNegative(true);
+        }else{
+            setNegative(false);
+        }
+    }, [output]);
+
     return (
         <StyledMain>
             <title> Sofia F Resume | Projects </title>
@@ -100,19 +139,19 @@ export default function Projects(){
             <StyledCalc>
                 <StyledCalcTitle>Sofia's Calculator</StyledCalcTitle>
                 <StyledInput>
-                    <label htmlFor="one"></label><input id="one"/>
-                    <label htmlFor="two"></label><input id="two"/>
+                    <input type="text" placeholder="" value={one} onChange={(e) => setOne(e.target.value)}/>
+                    <input type="text" placeholder="" value={two} onChange={(e) => setTwo(e.target.value)}/>
                 </StyledInput>
                 <StyledButton>
-                    <button>+</button>
-                    <button>-</button>
-                    <button>*</button>
-                    <button>/</button>
-                    <button>**</button>
-                    <button>Clear</button>
+                    <button onClick={() => setOperator('+')}>+</button>
+                    <button onClick={()=>setOperator('-')}>-</button>
+                    <button onClick={()=> setOperator('*')}>*</button>
+                    <button onClick={()=> setOperator('/')}>/</button>
+                    <button onClick={()=> setOperator('**')}>**</button>
+                    <button onClick={()=> setOperator('Clear')}>Clear</button>
                 </StyledButton>
                 <Result>
-                    <h2 id="output"></h2>
+                    <h2 style={{color: negative ? "red" : "black"}}>{output}</h2>
                 </Result>
             </StyledCalc>
         </StyledMain>
