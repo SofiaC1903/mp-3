@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const StyledNav = styled.nav`
     width: 30%;
-    height: 100vw;
     background-color:  #c0d1e3;
     
     @media screen and (max-width: 1000px){
@@ -15,7 +14,6 @@ const StyledUl = styled.ul`
     padding-left: 0;
     list-style: none;
     display: flex;
-    height: 100%;
     flex-direction: column;
     
     li{

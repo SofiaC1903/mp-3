@@ -80,6 +80,7 @@ const Result = styled.div`
     height:15%;
     width: 20%;
     background-color: #2b4651;
+    color: #d5d7d6;
     border: none;
     border-radius: 15px;
 

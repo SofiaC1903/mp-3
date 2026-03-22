@@ -13,6 +13,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
     width: 80vw;
+    height:100%;
     margin: 0 auto;
     text-align: left;
     background-color: #ffefd3;
@@ -23,13 +24,13 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 80%;
+    height: 100%;
     border-top: 4px solid #395c6b;
     border-bottom: 4px solid #395c6b;
-    overflow: scroll;
+    overflow: visible;
     
     @media screen and (max-width: 1000px){
-        overflow:scroll;
+        overflow: visible;
         flex-direction: column;
         align-items: center;
         height: 100vh;
@@ -37,7 +38,7 @@ const Container = styled.div`
 `
 
 export const StyledMain = styled.main`
-    height: 100vh;
+    height: 100%;
     width: 70%;
 
     @media screen and (max-width:1000px){
