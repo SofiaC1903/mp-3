@@ -13,22 +13,26 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
     width: 80vw;
-    height:100%;
+    height:100vh;
     margin: 0 auto;
     text-align: left;
     background-color: #ffefd3;
     font-size: calc(3px + 1vw);
+    overflow-y: auto;
+    
+    display: flex;
+    flex-direction: column;
 `
 
 const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 100%;
     border-top: 4px solid #395c6b;
     border-bottom: 4px solid #395c6b;
     overflow: visible;
     
+    flex:1;
     @media screen and (max-width: 1000px){
         overflow: visible;
         flex-direction: column;
@@ -41,6 +45,7 @@ export const StyledMain = styled.main`
     height: 100%;
     width: 70%;
 
+    flex: 1;
     @media screen and (max-width:1000px){
         height:100vh;
         width: 100%;
@@ -52,6 +57,18 @@ export const StyledHeader = styled.header`
     color: white;
     padding: 2%;
     text-shadow: -1px -1px 7px #f68d08;
+
+    @media screen and (max-width:1000px){
+        text-align: center;
+    }
+`
+
+export const StyledFooter = styled.footer`
+    background-color: #fdbe7b;
+    color: white;
+    padding: 2%;
+    text-shadow: -1px -1px 7px #f68d08;
+    width: 100%;
 
     @media screen and (max-width:1000px){
         text-align: center;

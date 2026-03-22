@@ -2,6 +2,7 @@ import {Link} from "react-router";
 import styled from "styled-components";
 
 const StyledNav = styled.nav`
+    height: 100%;
     width: 30%;
     background-color:  #c0d1e3;
     
