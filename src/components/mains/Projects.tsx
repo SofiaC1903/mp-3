@@ -52,6 +52,12 @@ export default function Projects(){
                         file and also provides a filter utility to obtain voter's that meet the input conditions.
                     </StyledText>
                 </li>
+                <li>
+                    <a href={"https://cs-webapps.bu.edu/scfordw/dadjokes/"} target={"_blank"}><strong>DadJokes App and API</strong></a><br/>
+                    <StyledText>A django app to display randomized images and dad jokes submitted by users, with django API rest_framework to
+                        implement jokes in React Native mobile app.
+                    </StyledText>
+                </li>
             </StyledList>
             <br/>
             <StyledTitle>React and Next.js Projects:</StyledTitle>
@@ -70,12 +76,6 @@ export default function Projects(){
                     <StyledText>React app created for my Software Development class where user can type name of
                     amiibo character into search bar and get back all versions of the character and their information.
                     Sadly, the API no longer works as it now requires a subscription.</StyledText>
-                </li>
-                <li>
-                    <a href={"https://sf-mp-4.vercel.app/"} target={"_blank"}><strong>Cat API</strong></a><br/>
-                    <StyledText>Next.js App to practice safely including environment variables to our web apps.
-                    I used a cat API that returns the number of cat images, however it also requires a subscription
-                    to apply this feature. Instead, the free version returns either 1 cat image or 10.</StyledText>
                 </li>
                 <li>
                     <a href={"https://sf-mp-4.vercel.app/"} target={"_blank"}><strong>Cat API</strong></a><br/>
